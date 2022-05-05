@@ -1,0 +1,33 @@
+// variables de Brakepoints
+$br-mob: 420px;
+$br-tab: 720px;
+$br-dsk: 1024px;
+
+
+
+// (min-width: $br-mob)
+// (min-width: $br-tab)
+// (min-width: $br-dsk)
+
+
+$color-white: #f0f0f0;
+$color-gray: #B5B5BD;
+$color-black: #252525;
+$color-blue: #0026c9;
+
+$filter-color-white: invert(100%) sepia(26%) saturate(89%) hue-rotate(231deg) brightness(110%) contrast(88%);
+$filer-color-blue: invert(14%) sepia(100%) saturate(4485%) hue-rotate(232deg) brightness(74%) contrast(118%);
+
+$gradient-gray: linear-gradient(
+    335deg,
+  hsl(240deg, 6%, 73%) 0%,
+  hsl(240deg, 6%, 75%) 22%,
+  hsl(240deg, 5%, 78%) 33%,
+  hsl(240deg, 5%, 81%) 42%,
+  hsl(240deg, 5%, 83%) 50%,
+  hsl(240deg, 4%, 86%) 58%,
+  hsl(240deg, 4%, 89%) 67%,
+  hsl(241deg, 2%, 91%) 78%,
+  hsl(0deg, 0%, 94%) 100%
+  );
+

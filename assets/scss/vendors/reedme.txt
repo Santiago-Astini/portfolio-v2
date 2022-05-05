@@ -1,0 +1,1 @@
+Esta carpeta tiene dos opciones en función de si estáis empleando webpack o no.

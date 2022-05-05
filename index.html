@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Santiago Astini | Diseñador Gráfico, Web e Ilustrador</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Santiago Astini">
+        <meta name="description" content="Diseñador Gráfico, Web e Ilustrador">
+
+        <meta property="og:title" content="Santiago Astini | Home, Inicio">
+        <meta property="og:description" content="Este es mi hoem, mi portfolio, acá vas a poder descubrir mis trabajos y contactarme, espero que lo disfrutes.">
+        <meta property="og:image" content="./assets/img/svg/s-logo-favicon.svg">
+        <meta property="og:url" content="/this-page.html">
+    
+        <meta property="og:site_name" content="Santiago Astini | Diseñador Gráfico, Web e Ilustrador">
+    
+        <!-- Esto es para twiter
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:alt" content="image description">
+        -->
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="./assets/img/svg/s-logo-favicon.svg">
+    </head>
+
+    <body>
+
+        <header class="h-menu">
+            
+            <nav class="h-menu__nav-bar-mob">
+                <ul role="list" class="h-menu__nav-bar-mob__list">
+                    <li class="h-menu__nav-bar-mob__item">
+                        <a href="./index.html" class="h-menu__nav-bar-mob__sl sl">
+                            <img src="./assets/img/svg/sa-logo-ico.svg" alt="" class="logo h-s-l">
+                        </a> 
+                    </li>
+                    <li class="h-menu__nav-bar-mob__item">
+                        <span class="h-menu__nav-bar-mob__sl sl">
+                            <img onclick="openNav()" src="./assets/img/svg/burger-ico.svg" alt="" class="burger h-s-r">
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+
+                <a href="./index.html" class="sidenav_logo">
+                    <img src="./assets/img/svg/sa-logo-ico.svg" alt="" class="logo  h-s-l">
+                </a> 
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/img/svg/close-ico.svg" alt="" class="close h-s-r">
+                </a>
+
+                <a class="menu-section" href="./pages/works.html">
+                    <span >
+                        trabajos
+                    </span>
+                    <img class="sidenav__arrow-rg aajcsb" src="/assets/img/svg/arrow-rg.svg" alt="">
+                </a>
+                <a href="./pages/illus.html">
+                    <span class="u-ani-w">
+                        illustraciones
+                    </span>
+                    <img class="sidenav__arrow-rg aajcsb" src="/assets/img/svg/arrow-rg.svg" alt="">
+                </a>
+                <a href="./pages/about.html">
+                    <span class="u-ani-w">
+                        sobre mi
+                    </span>
+                    <img class="sidenav__arrow-rg aajcsb" src="/assets/img/svg/arrow-rg.svg" alt="">
+                </a>
+                <a href="./pages/contact.html">
+                    <span class="u-ani-w">
+                        contacto
+                    </span>
+                    <img class="sidenav__arrow-rg aajcsb" src="/assets/img/svg/arrow-rg.svg" alt="">
+                </a>
+              </div>
+
+
+
+
+
+
+            <!-- <nav class="h-menu__nav-bar-dsk">
+                <ul class="h-menu__nav-bar-dsk__sect">
+                    <li class="h-menu__nav-bar-dsk__sect__sl">
+                        <a classs="sl" href="./index.html"><h1 class="sl hover-underline-ani">santiago astini</h1></a>
+                    </li>
+                    <li class="h-menu__nav-bar-dsk__sect__sl">
+                        <a class="sl hover-underline-ani" href="./pages/works.html">trabajos</a>
+                    </li>
+                    <li class="h-menu__nav-bar-dsk__sect__sl">
+                        <a class="sl hover-underline-ani" href="./pages/illustrations.html">ilustraciones</a>
+                    </li>
+                    <li class="h-menu__nav-bar-dsk__sect__sl">
+                        <a class="sl hover-underline-ani" href="./pages/about.html">sobre mi</a>
+                    </li>
+                    <li class="h-menu__nav-bar-dsk__sect__sl">
+                        <a class="sl hover-underline-ani" href="./pages/contact.html">contacto</a>
+                    </li>
+                </ul>
+            </nav> -->
+
+
+
+
+        </header>
+
+        <main class="home">
+            <section class="descript">
+                <span>
+                    <p>¡Hola!</p>
+                </span>
+                <span>
+                    <p>Me llamo </p> <h1>Santiago Astini</h1>
+                </span>
+                <span>
+                    <p>y soy Diseñador Gráfico</p>
+                </span>
+                <span>
+                    <p>Ilustrador</p>
+                </span>
+                <span>
+                    <p>y Desarrollador Web,</p>
+                </span>
+                <span>
+                    <p>de Córdoba, Argentina</p>
+                </span>
+                
+            </section>
+            <section class="show">
+                <article class="show-prj">
+                    
+                        <img class="show-prj__sticky-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f1d923137904007.6213afa0549f8.png" alt="">
+                    
+                    <a class="show-prj__link" href="">
+                        <h2 class="show-prj__title">TITULO</h2>
+                                       
+                        <img src="./assets/img/svg/arrow-rg.svg" alt="" class="show-prj__arrow">
+                    </a>
+
+                    
+                </article>
+
+                
+            </section>
+
+        </main>
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/img-loader.js"></script>
+    
+    </body>
+</html>

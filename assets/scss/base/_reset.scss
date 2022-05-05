@@ -1,0 +1,97 @@
+// /*-----------------------------------------------------------
+//   1. usa un modelo de box-sizeing más intuitivo
+// -----------------------------------------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+//   /*-----------------------------------------------------------
+//     2. remueve el margen por defoult
+//   -----------------------------------------------------------*/
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+//   /*-----------------------------------------------------------
+//     3. Allow percentage-based heights in the application
+//   -----------------------------------------------------------*/
+  html, body {
+    height: 100%;
+
+    overflow-x: hidden;
+  }
+//   /*-----------------------------------------------------------
+//     cambios tipográficos
+//     4. altura de linea mas accesible
+//     5. mejora de renderizadod e texto
+//     6. altura por defecto minima del body 100vh
+//  -----------------------------------------------------------*/
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+  }
+//   /*-----------------------------------------------------------
+//     7. mejora las condiciones defoult de medias
+//   -----------------------------------------------------------*/
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+//   /*-----------------------------------------------------------
+//     8. remuebe formatos tipograficos de form
+//   -----------------------------------------------------------*/
+  input, button, textarea, select {
+    font: inherit;
+  }
+//   /*-----------------------------------------------------------
+//     9. Previene overflow de texto
+//   -----------------------------------------------------------*/
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+// /*-----------------------------------------------------------
+//   10. Remueve estilos de listas en elementos ul y ol  con un  list role, se sugiere que el estilo default se remueva sin afecatar la accesibilidad
+// -----------------------------------------------------------*/
+  ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+// /*-----------------------------------------------------------
+//   10. Seteamos scroll-behavior
+// -----------------------------------------------------------*/
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+//   /* -------------------------------------
+// scrollbar
+// ------------------------------------- */
+
+// /* width */
+::-webkit-scrollbar {
+  width: 1vw;
+  /* z-index: 200; */
+}
+
+// /* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  
+}
+
+// /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+// /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
