@@ -228,3 +228,41 @@
             // justify-content: flex-start;
         }
     }
+
+    .aajcsc{
+      // -webkit-transform: translateX(-80%);
+      // transform: translateX(-75vw);
+
+      animation: arrow2 3s cubic-bezier(.55,0,.1,1) infinite both;
+  }
+  @keyframes arrow2{
+      from{
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+          // -webkit-transform: translateX(0px);
+          // transform: translateX(0px);
+          // margin-left: 2vw;
+
+          
+          // justify-content: flex-start;
+      }
+      50%{
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+
+          // -webkit-transform: translateX(150%);
+          // transform: translateX(150%);
+          // margin-left: 80%;
+          // justify-content: space-between;
+      }
+      to{
+          webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+          // -webkit-transform: translateX(0px);
+          // transform: translateX(0px);
+          // margin-left: 2vw;
+          // justify-content: flex-start;
+      }
+  }

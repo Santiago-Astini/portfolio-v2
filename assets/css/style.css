@@ -220,26 +220,40 @@ HEADER dsktop
   .sidenav {
     padding-top: 15px; } }
 
+.h {
+  overflow: hidden; }
+
 .home {
   width: 100%;
   min-height: 100%;
   background-color: #f0f0f0; }
 
+.descript {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 10%;
+  padding-right: 8%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #0026c9; }
+
 .show {
   width: 100%;
   min-height: 100%;
-  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .show-prj {
-  width: 80%;
+  width: 100%;
   height: calc(100vh/5);
-  background-color: #B5B5BD;
-  background-image: linear-gradient(335deg, #b6b6be 0%, #bbbbc3 22%, #c4c4ca 33%, #ccccd1 42%, #d1d1d6 50%, #dadadd 58%, #e2e2e4 67%, #e8e8e9 78%, #f0f0f0 100%);
-  margin-top: 10vh;
+  margin-top: 1vh;
   padding: 2%;
+  border-bottom: 2px solid #0026c9;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -247,8 +261,8 @@ HEADER dsktop
   display: inline-block; }
   .show-prj__sticky-img {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
@@ -261,7 +275,13 @@ HEADER dsktop
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-between;
+    align-items: center; }
+  .show-prj__title {
+    color: #0026c9; }
+  .show-prj__arrow {
+    width: min(max(1rem, 4vw), 36px);
+    filter: invert(14%) sepia(100%) saturate(4485%) hue-rotate(232deg) brightness(74%) contrast(118%); }
 
 .footer-h {
   width: 100%;
@@ -481,3 +501,17 @@ HEADER dsktop
   to {
     webkit-transform: translateX(150%);
     transform: translateX(150%); } }
+
+.aajcsc {
+  animation: arrow2 3s cubic-bezier(0.55, 0, 0.1, 1) infinite both; }
+
+@keyframes arrow2 {
+  from {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  50% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  to {
+    webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }

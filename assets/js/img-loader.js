@@ -1,6 +1,6 @@
 gsap.utils.toArray(".show-prj").forEach((el) => {
   
-    const image = el.querySelector('show-prj__sticky-img'),
+    const image = el.querySelector('img.show-prj__sticky-img'),
           setX = gsap.quickSetter(image, "x", "px"),
           setY = gsap.quickSetter(image, "y", "px"),
           align = e => {
