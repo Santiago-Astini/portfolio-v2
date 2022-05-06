@@ -1,0 +1,99 @@
+.footer-wic{
+    width: 100%;
+    height: 50%;
+    background-color: $color-blue;
+    padding: 2%;
+
+    &__cont{
+
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        
+        &__cta{
+            grid-row: 2 / 3;
+            grid-column: 1 / 4;
+
+            // display: flex;
+        
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                font-size: 3.5vmax;
+
+            &__top{
+                color: $color-white;
+            }
+            &__mid{
+                color: $color-white;
+            }
+            &__bot{
+                color: $color-white;
+                & a{
+                    color: $color-white;
+                    font-size: 3.5vmax;
+                }
+            }
+        }
+        &__txt{
+            grid-row: 3 / 4;
+            grid-column: 1 / 4;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            & p{
+                color: $color-white;
+            }
+
+        }
+        &__mail{
+            grid-row: 4 / 5;
+            grid-column: 1 / 3;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+
+            &__a{
+                &__top{
+                    color: $color-white;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &__arrow{
+                        width:  unquote("min(max(1rem, 4vw), 36px)");
+                        margin-left: 2vw;
+                        filter: $filter-color-white;
+                    }
+                }
+                &__bot{
+                    color: $color-white;
+                }
+            }
+        }
+        &__social{
+            grid-row: 4 / 5;
+            grid-column: 3 / 4;
+
+            color: $color-white;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            
+            & a{
+                color: $color-white;
+                margin-left: 3%;
+            }
+        }
+    }
+}
